@@ -118,7 +118,7 @@ class BlockBreak implements Listener {
                 if(isset(Main::getInstance()->economyPlugin)){
                     $moneyCount = $loot["money"];
 
-                    $player->sendMessage(Main::PREFIX . "You winned " . $moneyCount . Main::getInstance()->economyPlugin->getMonetaryUnit() . ", congratulation !");
+                    $player->sendMessage(Main::PREFIX . "You won " . $moneyCount . Main::getInstance()->economyPlugin->getMonetaryUnit() . ", congratulations !");
                     Main::getInstance()->economyPlugin->addMoney($player, $moneyCount);
                 } else {
                     $player->sendMessage(Main::PREFIX . "An error has occurred, contact an administrator.");
